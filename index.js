@@ -31,7 +31,7 @@ app.get ('/products', (req, res) => {
 })
 
 app.post("/products", async (req, res) => {
-	const post = new User({
+	const post = new Product({
 		name: req.body.name,
 		phone: req.body.phone,
       password: req.body.password
