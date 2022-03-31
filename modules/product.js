@@ -7,8 +7,7 @@ const productSchema = new Schema ({
     id: String,
     category: String,
     price: String,
-    price: String,
-    Status: String,
+    status: String,
 
 }, {timestamps: true} )
 
