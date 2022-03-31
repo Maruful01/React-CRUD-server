@@ -33,8 +33,10 @@ app.get ('/products', (req, res) => {
 app.post("/products", async (req, res) => {
 	const post = new Product({
 		name: req.body.name,
-		phone: req.body.phone,
-      password: req.body.password
+      id: req.body.id,
+      category: req.body.category,
+      price: req.body.price,
+      status: req.body.status,
 	})
 	await post.save()
 	res.send(post)
